@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adoptmepetrobux.com</title>
+    <style>
+        /* CSS kodlarını buraya yazın */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff9933, #ff3399, #9933ff, #3399ff, #33ff99, #ffcc00);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #form-container h2 {
+            text-align: center;
+        }
+
+        #form-container input[type="text"],
+        #form-container input[type="email"],
+        #form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #form-container button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #ff3399;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="animated-bg"></div>
+        <div id="form-container">
+            <h2>Karşılık Formu</h2>
+            <form>
+                <input type="text" placeholder="Roblox Hesap Adı" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <textarea placeholder="Petinizin Adı ve Değeri" required></textarea>
+                <button type="submit">Robux Al</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript kodlarını buraya yazın (isteğe bağlı)
+    </script>
+</body>
+</html>
